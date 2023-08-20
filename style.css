@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navi {
+    display: flex;
+    /* margin-top: 10px; */
+    font-size: 40px;
+    justify-content: space-between;
+    background-color: #DDDDDD;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+}
+
+#mcire {
+    font-size: 13px;
+    color: #B3B3B3;
+    opacity: 1;
+}
+
+#noli {
+    font-size: 150px;
+    color: #1C1C1C;
+    opacity: 1;
+}
+
+#zemodan {
+    font-size: 45px;
+    margin-top: -150px;
+    background: none;
+    color: #373737;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+.pirveli {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-top: -100px; */
+    background-color: #DDDDDD;
+}
+
+.agwera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 50px;
+    color: #212121;
+    margin-left: 15px;
+}
+
+#gamarjoba {
+    font-size: 30px;
+    letter-spacing: 1.4px;
+}
+
+#identoba {
+    font-size: 35px;
+    letter-spacing: 1.4px;
+}
+
+#samsaxuri {
+    font-size: 23px;
+    opacity: 1;
+    letter-spacing: 0px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.f-bar {
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 18px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 805px;
+    right: -200px;
+}
+
+#xazi {
+    border-top: 5px solid red;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.meore {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 130px;
+    /* gap: 150px; */
+}
+
+.saxeli {
+    text-align: right;
+}
+
+.zeda {
+    text-align: right;
+}
+
+#lorem {
+    margin-top: 33px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    background-color: red;
+}
+
+
+
+.support {
+    margin-top: 80px;
+    background-color: #131A36;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wre {
+    border: 2px dotted white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+.support {
+    display: flex;
+    justify-content: space-around;
+}
+
+.support .phone,
+.support .loc,
+.support .email {
+    display: flex;
+    align-items: center;
+}
+
+.support i {
+    font-size: 24px;
+}
+
+.support .wre::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+
+.icon {
+    z-index: 1;
+}
+
+.support .wre:hover,
+.support .wre:focus {
+    background-color: transparent;
+}
+
+.support .wre:hover::after,
+.support .wre:focus::after {
+    transform: scale(1);
+}
+
+.bar-container {
+    width: 100px;
+    height: 200px;
+
+}
+
+.bar {
+    width: 100%;
+    height: 40px;
+    background-color: #ff0000;
+
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.filled-bar {
+    position: absolute;
+    height: 100%;
+    background-color: #dc3545;
+    transition: width 0.3s;
+}
+
+.hidden-image {
+    display: none;
+}
+
+.knopka {
+    display: none;
+}
