@@ -43,3 +43,6 @@ slider.addEventListener('mouseenter', () => {
 slider.addEventListener('mouseleave', () => {
     slideInterval = setInterval(goToNextSlide, 5000);
 });
+
+
+
