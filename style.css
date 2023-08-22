@@ -92,17 +92,20 @@
     color: red;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    justify-content: flex-end;
     font-size: 18px;
     margin-bottom: 30px;
     position: relative;
+    margin-left: 100px;
 
 }
 
 #xazi {
     border-top: 5px solid red;
     border-radius: 10px;
-    width: 100px;
+    width: 100%;
+    display: flex;
+
 }
 
 .meore {
@@ -137,7 +140,6 @@ button {
     height: 40px;
     background-color: red;
 }
-
 
 
 .support {
@@ -298,12 +300,9 @@ button {
     pointer-events: auto;
 }
 
-
-
 .rec {
     margin-top: 100px;
     height: 400px;
-    background-color: darkblue;
     color: white;
     font-size: 15px;
     display: flex;
@@ -311,4 +310,122 @@ button {
     justify-content: center;
     text-align: right;
     gap: 30px;
+}
+
+.mexute {
+    background-image: url(./img/back.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin-top: 150px;
+}
+
+
+
+
+
+@media(max-width: 400px) {
+    .navi {
+        display: none;
+        font-size: 24px;
+    }
+
+    .pirveli,
+    .meore,
+    .mesame,
+    .meotxe,
+    .mexute {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .meotxe {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    .agwera,
+    .saxeli {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .zeda {
+        text-align: center;
+    }
+
+    .me {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stack {
+        margin: 20px 0;
+    }
+
+    .f-bar {
+        margin: 20px 0;
+        margin-left: 0;
+    }
+
+    .me img {
+        max-width: 60%;
+    }
+
+    .bar-container {
+        margin-top: 20px;
+    }
+
+    .support {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .phone {
+        margin-left: -60px;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .bar {
+        margin-bottom: 5px;
+    }
+
+    .links {
+        font-size: 20px;
+    }
+
+    .wre {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+
+    .slider-container2,
+    .slide-rec2,
+    .rec3 {
+        padding: 10px;
+    }
+
+    .dots {
+        display: none;
+    }
+
+    .meeqvse h1 {
+        font-size: 24px;
+    }
 }
