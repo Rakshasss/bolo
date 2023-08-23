@@ -1,8 +1,18 @@
+@font-face {
+    font-family: "GlacialIndifference-Bold";
+    src: url("./GlacialIndifference-Bold.ttf") format("truetype");
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .navi {
@@ -103,16 +113,16 @@
 #xazi {
     border-top: 5px solid red;
     border-radius: 10px;
-    width: 100%;
+    width: 130%;
     display: flex;
 
 }
 
 .meore {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 130px;
-    /* gap: 150px; */
+    gap: 150px;
 }
 
 .saxeli {
@@ -141,6 +151,29 @@ button {
     background-color: red;
 }
 
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.sami {
+    border: 1px solid #F9F9F9;
+    width: 40px;
+    height: 40px;
+    background-color: #F9F9F9;
+    margin-top: 80px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in;
+}
+
+.sami:hover {
+    background-color: #15263E;
+}
 
 .support {
     margin-top: 80px;
@@ -149,8 +182,9 @@ button {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 60px;
 }
 
 .wre {
@@ -203,24 +237,17 @@ button {
 }
 
 .bar-container {
-    width: 100px;
-    height: 200px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.bar {
-    width: 100%;
-    height: 40px;
-    background-color: #ff0000;
-    margin-bottom: 10px;
-    position: relative;
-}
 
-.filled-bar {
-    position: absolute;
-    height: 100%;
-    background-color: #dc3545;
-    transition: width 0.3s;
+.fillable {
+    width: 250px;
+    height: 10px;
+    margin-top: 20px;
+    /* background-color: red; */
 }
 
 .hidden-image {
@@ -318,10 +345,58 @@ button {
     background-repeat: no-repeat;
 }
 
-h1 {
+
+h2 {
+    display: flex;
+    justify-content: center;
     margin-top: 150px;
+    font-size: 50px;
 }
 
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    background-color: #15263E;
+    color: white;
+    width: 240px;
+    height: 300px;
+}
+
+ul {
+    list-style: none;
+    font-family: "GlacialIndifference-Bold";
+}
+
+li {
+    margin-top: 10px;
+}
+
+.project-images {
+    border: 1px solid red;
+    width: 900px;
+    height: 700px;
+}
+
+.saboloo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.row-2 {
+    border: 1px solid red;
+    background-color: #007bff;
+    display: flex;
+}
+
+.ori {
+    border: 1px solid green;
+    width: 300px;
+    height: 350px;
+}
 
 
 
@@ -387,6 +462,7 @@ h1 {
         flex-direction: column;
         align-items: center;
         margin: 20px 0;
+        gap: 30px;
     }
 
     .phone {
@@ -427,5 +503,9 @@ h1 {
 
     .meeqvse h1 {
         font-size: 24px;
+    }
+
+    .sami {
+        margin-top: 10px;
     }
 }
