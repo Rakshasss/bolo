@@ -313,7 +313,7 @@ button {
     color: white;
     padding: 20px;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease-in;
     pointer-events: none;
     display: flex;
     justify-content: center;
@@ -419,26 +419,42 @@ li {
     justify-content: space-evenly;
 }
 
-.blank {
-    width: 100px;
-    border: 1px solid white;
-}
 
 .first {
-    border: 1px solid green;
+    background-color: #FAFAFA;
     display: grid;
     grid-template-columns: auto 1fr auto;
 }
 
+
 .p-nawili {
-    margin-left: 50px;
+    margin-top: 50px;
+    margin-left: 115px;
 }
 
 .shua {
-    border: 1px solid red;
     width: 123px;
     height: 500px;
     margin-left: 200px;
+    background-color: #15263E;
+}
+
+.shua>p {
+    margin-top: 230px;
+    transform: rotate(270deg);
+    font-size: 30px;
+    color: red;
+}
+
+.centri {
+    background-color: #15263E;
+}
+
+.centri>p {
+    color: red;
+    transform: rotate(90deg);
+    font-size: 30px;
+    margin-top: 230px;
 }
 
 .grd {
@@ -450,7 +466,7 @@ li {
 }
 
 .fotka {
-    width: 1100px;
+    width: 1000px;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -458,6 +474,9 @@ li {
     overflow: hidden;
 }
 
+.chasatevi {
+    background-color: black;
+}
 
 .fotka>img {
     width: 100%;
@@ -466,7 +485,61 @@ li {
 }
 
 #meti {
-    margin-top: 15px;
+    position: relative;
+    top: 15px;
+}
+
+.centri {
+    width: 123px;
+    height: 500px;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 100px;
+}
+
+.logos {
+    display: flex;
+}
+
+.logos img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    text-align: center;
+    border: 1px solid red;
+    width: 230px;
+    height: 190px;
+}
+
+.logos:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.logos:hover {
+    transform: scale(1.1);
 }
 
 @media(max-width: 400px) {
