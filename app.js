@@ -32,4 +32,3 @@ for (let i = 1; i < images.length; i++) {
     images[i].classList.add('hidden-image');
 }
 
-const slideInterval = setInterval(goToNextSlide, 1000);

@@ -413,6 +413,62 @@ li {
     object-fit: cover;
 }
 
+.artiklebi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.blank {
+    width: 100px;
+    border: 1px solid white;
+}
+
+.first {
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.p-nawili {
+    margin-left: 50px;
+}
+
+.shua {
+    border: 1px solid red;
+    width: 123px;
+    height: 500px;
+    margin-left: 200px;
+}
+
+.grd {
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.fotka {
+    width: 1100px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.fotka>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#meti {
+    margin-top: 15px;
+}
+
 @media(max-width: 400px) {
     .navi {
         display: none;
