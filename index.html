@@ -27,16 +27,18 @@
         </div>
     </header>
     <section class="pirveli">
-        <div class="slider-container">
-            <div class="slider">
-                <img src="./img/me.png" alt="Image 1">
-                <img src="./img/me3.png" alt="Image 3" class="hidden-image">
-                <img src="./img/meoreme.png" alt=" Image 2" class="hidden-image">
-
+        <div class="slider-buttons">
+            <div class="slider-container">
+                <img src="./img/me.png" alt="Image 1" width="300px" height="300px">
+                <img src="./img/me3.png" alt="Image 3" class="hidden-image" width="300px" height="300px">
+                <img src="./img/meoreme.png" alt=" Image 2" class="hidden-image" width="300px" height="300px">
             </div>
-            <button class="prev-button knopka">Previous</button>
-            <button class="next-button knopka">Next</button>
+            <div>
+                <button class="prev-button knopka">Previous</button>
+                <button class="next-button knopka">Next</button>
+            </div>
         </div>
+
 
         <div class="agwera">
             <p id="gamarjoba">Hi, I' Am</p>
@@ -66,7 +68,7 @@
                 Sunt sed ad posimus magnam maores. Ipsam <br>
                 as velt blanditiis debitis consequuntur mollita <br>
                 umenda nam obcaecati illo!</P>
-            <div class="button">
+            <div class="gilaki">
                 <a href="#">
                     <button class="damiqirave">Hire Me</button>
                 </a>
@@ -75,29 +77,23 @@
         <div class="me">
             <img src="./img/realurime.png" alt="">
         </div>
-        <div class="bar-container">
-            <div class="bar">
-                <p>Design <span style="color: red;"> ( ) </span> </p>
-                <div class="filled-bar">
-                    <hr class="fillable">
+        <div class="sveti">
+            <div class="bar-container">
+                <p style="font-size: 20px; width: auto;"> Design<span style="color: red;"> ( 80% )</span> </p>
+                <div class="bar">
+                    <div class="filled-bar" id="design" style="width: 0%;"></div>
                 </div>
-            </div>
-            <div class="bar">
-                <p> photography<span style="color: red;"> ( ) </span> </p>
-                <div class="filled-bar">
-                    <hr class="fillable">
+                <p style="font-size: 20px; width: auto;">Marking <span style="color: red;">( 90% )</span> </p>
+                <div class="bar">
+                    <div class="filled-bar" id="marking" style="width: 0%;"></div>
                 </div>
-            </div>
-            <div class="bar">
-                <p>Marking <span style="color: red;"> ( ) </span> </p>
-                <div class="filled-bar">
-                    <hr class="fillable">
+                <p style="font-size: 20px; width: auto;">developmnet <span style="color: red;">( 40% )</span> </p>
+                <div class="bar">
+                    <div class="filled-bar" id="development" style="width: 0%;"></div>
                 </div>
-            </div>
-            <div class="bar">
-                <p>Photoshop <span style="color: red;"> ( ) </span> </p>
-                <div class="filled-bar">
-                    <hr class="fillable">
+                <p style="font-size: 20px; width: auto;">production <span style="color: red;">( 25% )</span></p>
+                <div class="bar">
+                    <div class="filled-bar" id="production" style="width: 0%;"></div>
                 </div>
             </div>
             <div class="tags">
@@ -235,8 +231,8 @@
         </div>
     </section>
     <section class="mexute">
-        <div class="slider-container2">
-            <div class="rec">
+        <div class="slideshow">
+            <div class="slide active" id="slide1">
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
                     deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit <br>
                     sed do eiusmod tempor incididunt ut labore..</p>
@@ -246,43 +242,40 @@
                 <div class="desc">
                     <p style="font-size: 50px; text-align: left;">''</p>
                     <p style="color: red; font-size: 9px; text-align: left;"> Graphic designer</p>
-                    <p style="font-size: 30px;">Mau Thomas</p>
+                    <p style="font-size: 30px;">Mau Thomas 1</p>
                 </div>
-                <!-- <div class="slide-rec2">
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
-                        deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit <br>
-                        sed do eiusmod tempor incididunt ut labore..</p>
-                    <div class="wre">
-                        <img src="" alt="">
-                    </div>
-                    <div class="desc">
-                        <p style="font-size: 50px; text-align: left;">''</p>
-                        <p style="color: red; font-size: 9px; text-align: left;"> Graphic designer</p>
-                        <p style="font-size: 30px;">Mau Thomas</p>
-                    </div>
-                    <div class="rec3">
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
-                            deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit <br>
-                            sed do eiusmod tempor incididunt ut labore..</p>
-                        <div class="wre">
-                            <img src="" alt="">
-                        </div>
-                        <div class="desc">
-                            <p style="font-size: 50px; text-align: left;">''</p>
-                            <p style="color: red; font-size: 9px; text-align: left;"> Graphic designer</p>
-                            <p style="font-size: 30px;">Mau Thomas</p>
-                        </div> -->
             </div>
-            <!-- <div class="gilaki">
-                        <button id="wina">Previous</button>
-                        <button id="shemdegi">Next</button>
-                    </div>
-                    <div class="dots">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div> -->
-        </div>
+            <div class="slide" id="slide2">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
+                    deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit <br>
+                    sed do eiusmod tempor incididunt ut labore..</p>
+                <div class="wre">
+                    <img src="" alt="">
+                </div>
+                <div class="desc">
+                    <p style="font-size: 50px; text-align: left;">''</p>
+                    <p style="color: red; font-size: 9px; text-align: left;"> Graphic designer</p>
+                    <p style="font-size: 30px;">Mau Thomas 2</p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
+                    deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit <br>
+                    sed do eiusmod tempor incididunt ut labore..</p>
+                <div class="wre">
+                    <img src="" alt="">
+                </div>
+                <div class="desc">
+                    <p style="font-size: 50px; text-align: left;">''</p>
+                    <p style="color: red; font-size: 9px; text-align: left;"> Graphic designer</p>
+                    <p style="font-size: 30px;">Mau Thomas 3</p>
+                </div>
+            </div>
+            <div>
+                <button class="slideButton" data-slide-id="slide1"></button>
+                <button class="slideButton" data-slide-id="slide2"></button>
+                <button class="slideButton" data-slide-id="slide3"></button>
+            </div>
         </div>
     </section>
     <section class="meeqvse">
@@ -424,9 +417,58 @@
         </div>
     </section>
     <footer>
-
+        <section class="foot-section">
+            <div class="footer-content">
+                <div class="kontaqti">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="input-row">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="Your Website">
+                </div>
+                <div class="large-input-container">
+                    <textarea class="large-input" placeholder="Message*">
+                    </textarea>
+                    <button class="send-button">Send Message</button>
+                </div>
+            </div>
+        </section>
+        <section class="foot-section2">
+            <div class="foot-text">
+                <P style="font-size: 50px; color: white;">Roca<span style="color: red;"> . </span> </P>
+                <p id="lorem">Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusmod tempor <br>
+                    incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam quis <br>
+                    nostrud.</p>
+            </div>
+            <div class="tags">
+                <a href="#">
+                    <div class="fb sami">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="twit sami">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="google sami">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="pinterest sami">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="last" style="background-color: #171717;">
+            <p style="color: white;"> © All right reserved 2019. Rosa - Creative Agency Website PSD Template.</p>
+        </section>
     </footer>
-
 
 
     <script src="app.js"></script>

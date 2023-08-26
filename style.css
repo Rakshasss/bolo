@@ -27,6 +27,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    margin-top: 50px;
 
 }
 
@@ -56,6 +57,7 @@ a {
     justify-content: center;
     margin-right: 50px;
     margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 .pirveli {
@@ -141,7 +143,7 @@ a {
     margin-top: 33px;
 }
 
-button {
+.damiqirave {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
@@ -159,7 +161,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 5px;
+    gap: 17px;
 }
 
 .sami {
@@ -243,15 +245,32 @@ button {
 .bar-container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
 }
-
 
 .fillable {
     width: 250px;
     height: 10px;
+    background-color: red;
     margin-top: 20px;
-    /* background-color: red; */
+}
+
+.bar {
+    width: 130%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: gray;
+    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.filled-bar {
+    position: absolute;
+    height: 100%;
+    background-color: #dc3545;
+    border-radius: 20px;
+    transition: width 0.3s;
 }
 
 .hidden-image {
@@ -331,7 +350,17 @@ button {
     pointer-events: auto;
 }
 
-.rec {
+.slideshow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slide {
+    display: none;
+}
+
+.active {
     margin-top: 100px;
     height: 400px;
     color: white;
@@ -341,12 +370,26 @@ button {
     justify-content: center;
     text-align: right;
     gap: 30px;
+    visibility: visible;
 }
+
+
+.slideButton {
+    all: unset;
+    width: 15px;
+    height: 15px;
+    background-color: #dc3545;
+    cursor: pointer;
+}
+
 
 .mexute {
     background-image: url(./img/back.avif);
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
+    margin-top: 150px;
 }
 
 
@@ -540,6 +583,112 @@ li {
 
 .logos:hover {
     transform: scale(1.1);
+}
+
+.foot-section {
+    background-image: url('./img/map.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+}
+
+.footer-content {
+    text-align: center;
+    color: black;
+    padding: 50px;
+}
+
+.kontaqti {
+    margin-bottom: 100px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-row input {
+    padding: 20px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.large-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.large-input {
+    width: 940px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    resize: none;
+}
+
+input,
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.send-button {
+    color: red;
+    cursor: pointer;
+    background: none;
+}
+
+.send-button {
+    margin-top: 40px;
+}
+
+.send-button:hover {
+    background: none;
+}
+
+.foot-section2 {
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.foot-text {
+    padding-top: 20px;
+}
+
+#lorem {
+    text-align: center;
+    color: white;
+}
+
+.tags a {
+    margin-bottom: 20px;
+}
+
+.last {
+    padding: 30px;
+}
+
+.last p {
+    display: flex;
+    justify-content: center;
 }
 
 @media(max-width: 400px) {
