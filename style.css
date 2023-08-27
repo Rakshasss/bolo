@@ -350,20 +350,42 @@ a {
     pointer-events: auto;
 }
 
+.mexute {
+    background-image: url(./img/countdown-bg@2x.png);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 150px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
 .slideshow {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .slide {
     display: none;
 }
 
-.active {
-    margin-top: 100px;
-    height: 400px;
+.slide.active {
     color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    gap: 30px;
+    visibility: visible;
+}
+
+.hover-text.active {
+    color: red;
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -378,20 +400,31 @@ a {
     all: unset;
     width: 15px;
     height: 15px;
-    background-color: #dc3545;
+    background-color: white;
     cursor: pointer;
 }
 
-
-.mexute {
-    background-image: url(./img/back.avif);
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    margin-top: 150px;
+.slideButton.active {
+    background-color: #dc3545;
 }
 
+.yvela {
+    cursor: pointer;
+}
+
+.wre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gilakuri {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 50px;
+    margin-top: 115px;
+}
 
 h2 {
     display: flex;
@@ -403,27 +436,45 @@ h2 {
 .list {
     display: flex;
     justify-content: center;
-    align-items: center;
     border: 1px solid;
     background-color: #15263E;
     color: white;
     width: 240px;
     height: 300px;
+    flex-direction: column;
+    align-items: center;
 }
 
-ul {
-    list-style: none;
-    font-family: "GlacialIndifference-Bold";
+
+.list>p {
+    text-align: left;
 }
 
-li {
-    margin-top: 10px;
+.latest-projects {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.hover-text {
+    color: black;
+    transition: color 0.3s;
+    cursor: pointer;
 }
 
 .project-images {
     border: 1px solid white;
     width: 900px;
     height: 700px;
+}
+
+.pimage {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.pimage.active {
+    opacity: 1;
 }
 
 .saboloo {
@@ -572,8 +623,6 @@ li {
     pointer-events: none;
     text-align: center;
     border: 1px solid red;
-    width: 230px;
-    height: 190px;
 }
 
 .logos:hover .overlay {
@@ -597,10 +646,6 @@ li {
     text-align: center;
     color: black;
     padding: 50px;
-}
-
-.kontaqti {
-    margin-bottom: 100px;
 }
 
 .input-row {
@@ -690,6 +735,8 @@ button {
     display: flex;
     justify-content: center;
 }
+
+
 
 @media(max-width: 400px) {
     .navi {
@@ -798,4 +845,7 @@ button {
     .sami {
         margin-top: 10px;
     }
+
+
+
 }
