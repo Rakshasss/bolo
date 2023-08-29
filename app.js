@@ -204,3 +204,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+const openModalBtn = document.getElementById('submitButton');
+const closeModalBtn = document.getElementById('closeModalBtn');
+const modal = document.getElementById('myModal');
+
+openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
+});
+
+closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
